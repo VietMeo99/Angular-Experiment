@@ -1,0 +1,11 @@
+@import '../variable';
+
+.app-switch {
+  .ant-switch {
+    background-color: $dark-grey;
+  }
+
+  .ant-switch-checked {
+    background-color: $primary;
+  }
+}

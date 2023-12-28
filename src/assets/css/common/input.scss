@@ -1,0 +1,117 @@
+@import '../variable';
+@import '../utilities';
+
+.app-input {
+  &.ant-input {
+    height: $height-component;
+    background-color: transparent;
+    border: 1px solid $text-color;
+    border-radius: 5px;
+    padding: 5px 15px;
+    outline: none;
+    color: $text-color;
+    font-size: $p_font_size;
+
+    &::placeholder {
+      color: $subtitle_color;
+      font-size: $p_font_size;
+    }
+
+    &:focus {
+      box-shadow: none;
+      background-color: $background-color;
+    }
+
+    &:disabled {
+      background-color: $background-disable;
+      border: 1px solid $grey;
+    }
+  }
+
+  &.ant-input.ng-invalid.ng-touched {
+    padding-right: 40px;
+    border: 1px solid $error;
+  }
+}
+
+.app-input-group {
+  &.ant-input-affix-wrapper {
+    height: $height-component;
+    background-color: transparent;
+    border: 1px solid $text-color;
+    border-radius: 5px;
+    padding: 5px 15px;
+    color: $text-color;
+    font-size: $p_font_size;
+
+    .ant-input {
+      height: unset;
+      background-color: transparent;
+      border: none;
+      box-shadow: none;
+      border-radius: 0px;
+      padding: 0px;
+      color: $text-color;
+      font-size: $p_font_size;
+
+      &::placeholder {
+        color: $subtitle_color;
+        font-size: $p_font_size;
+      }
+    }
+
+    &.app-input-group-error {
+      padding-right: 40px;
+      border: 1px solid $error;
+    }
+
+    span {
+      font-size: $p_font_size;
+
+      svg {
+        font-size: $p_font_size;
+
+        path {
+          font-size: $p_font_size;
+        }
+      }
+    }
+  }
+
+  &.ant-input-affix-wrapper-focused {
+    box-shadow: none;
+    background-color: $background-color;
+  }
+
+  &.ant-input-affix-wrapper-disabled {
+    border: 1px solid $grey;
+
+    .ant-input {
+      color: $grey;
+    }
+
+    svg {
+      font-size: $p_font_size;
+
+      path {
+        font-size: $p_font_size;
+        color: $grey;
+      }
+    }
+  }
+}
+
+.ant-form-item-children-icon {
+  position: absolute;
+  right: 15px;
+  top: 2.5px;
+
+  svg {
+    font-size: $p_font_size;
+
+    path {
+      font-size: $p_font_size;
+      color: $error;
+    }
+  }
+}

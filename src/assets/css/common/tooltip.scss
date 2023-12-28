@@ -1,0 +1,14 @@
+@import '../variable';
+
+.app-tooltip {
+  .ant-tooltip-arrow:before {
+    background-color: $white;
+  }
+
+  .ant-tooltip-inner {
+    padding: 5px 20px;
+    color: $text-color;
+    font-size: $p_font_size;
+    background-color: $white;
+  }
+}

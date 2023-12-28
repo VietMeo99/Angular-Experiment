@@ -1,0 +1,193 @@
+@import '../variable';
+
+.app-button {
+  &.ant-btn {
+    height: $height-component;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+
+    &:disabled {
+      opacity: 0.8;
+      cursor: not-allowed;
+    }
+  }
+
+  &.primary.ant-btn-primary {
+    background-color: $primary;
+
+    span {
+      color: $white;
+      font-size: $p_font_size;
+    }
+
+    &:not([disabled]):hover,
+    &:not([disabled]):focus {
+      background-color: $dark-primary;
+    }
+
+    &.ant-btn-loading {
+      svg {
+        path {
+          color: $white;
+          font-size: $p_font_size;
+        }
+      }
+    }
+  }
+
+  &.secondary.ant-btn-primary {
+    background-color: $secondary;
+
+    span {
+      color: $white;
+      font-size: $p_font_size;
+    }
+
+    &:not([disabled]):hover,
+    &:not([disabled]):focus {
+      span {
+        color: $text-color;
+      }
+      border: solid 1px $text-color;
+      background-color: $white;
+    }
+
+    &.ant-btn-loading {
+      svg {
+        path {
+          color: $text-color;
+          font-size: $p_font_size;
+        }
+      }
+    }
+  }
+
+  &.cancel.ant-btn-primary {
+    background-color: $light_grey;
+
+    span {
+      color: $text-color;
+      font-size: $p_font_size;
+    }
+
+    &:not([disabled]):hover,
+    &:not([disabled]):focus {
+      background-color: $dark-grey;
+    }
+
+    &.ant-btn-loading {
+      svg {
+        path {
+          color: $text-color;
+          font-size: $p_font_size;
+        }
+      }
+    }
+  }
+
+  &.delete.ant-btn-primary {
+    background-color: $error;
+
+    span {
+      color: $white;
+      font-size: $p_font_size;
+    }
+
+    &:not([disabled]):hover,
+    &:not([disabled]):focus {
+      background-color: $dark-error;
+    }
+
+    &.ant-btn-loading {
+      svg {
+        path {
+          color: $white;
+          font-size: $p_font_size;
+        }
+      }
+    }
+  }
+}
+
+.app-button:not(.ant-btn) {
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+  font-weight: bold;
+  font-size: $p_font_size;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+
+  &:disabled {
+    opacity: 0.8;
+    cursor: not-allowed;
+  }
+
+  &.primary {
+    color: $white;
+    background-color: $primary;
+
+    &:not([disabled]):hover,
+    &:not([disabled]):focus {
+      background-color: $dark-primary;
+    }
+  }
+
+  &.cancel {
+    color: $text-color;
+    background-color: $light_grey;
+
+    &:not([disabled]):hover,
+    &:not([disabled]):focus {
+      background-color: $dark-grey;
+    }
+  }
+
+  &.delete {
+    color: $white;
+    background-color: $error;
+
+    &:not([disabled]):hover,
+    &:not([disabled]):focus {
+      background-color: $dark-error;
+    }
+  }
+}
+
+.app-icon-button {
+  &.ant-btn {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+
+    &:disabled {
+      opacity: 0.8;
+      cursor: not-allowed;
+    }
+  }
+
+  &.ant-btn-primary {
+    box-shadow: none;
+    background-color: $background-color;
+    color: $text-color;
+  }
+
+  &.ant-btn-primary:not([disabled]):hover,
+  &.ant-btn-primary:not([disabled]):focus {
+    background-color: $background-hover;
+    color: $title-hover;
+  }
+}

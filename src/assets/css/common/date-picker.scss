@@ -1,0 +1,91 @@
+@import '../variable';
+@import '../utilities';
+
+.app-date-picker {
+  &.ant-picker {
+    width: 100%;
+    height: $height-component;
+    background-color: transparent;
+    border: 1px solid $text-color;
+    border-radius: 5px;
+    box-shadow: none;
+    padding: 10px 15px;
+    outline: none;
+    color: $text-color;
+    font-size: $p_font_size;
+
+    input {
+      color: $text-color;
+      font-size: $p_font_size;
+
+      &::placeholder {
+        color: $subtitle_color;
+        font-size: $p_font_size;
+      }
+    }
+
+    .ant-picker-suffix {
+      font-size: $p_font_size;
+
+      svg {
+        font-size: $p_font_size;
+
+        path {
+          font-size: $p_font_size;
+        }
+      }
+    }
+
+    .ant-picker-clear {
+      svg {
+        font-size: $p_font_size;
+
+        path {
+          font-size: $p_font_size;
+        }
+      }
+    }
+  }
+
+  &.ant-picker-disabled {
+    box-shadow: none;
+    border: 1px solid $grey;
+    background-color: $light_grey;
+
+    input {
+      color: $grey;
+    }
+
+    .ant-picker-suffix {
+      svg {
+        path {
+          color: $grey;
+        }
+      }
+    }
+  }
+
+  &:not(.ant-picker-disabled).ant-picker-focused {
+    background-color: $background-color;
+
+    .ant-picker-clear {
+      background-color: $background-color;
+    }
+  }
+}
+
+.app-date-picker-dropdown {
+  &.ant-picker-dropdown {
+    font-size: $p_font_size;
+
+    button,
+    a,
+    th {
+      font-size: $p_font_size;
+    }
+
+    .ant-picker-cell-inner {
+      font-size: $p_font_size;
+    }
+  }
+}

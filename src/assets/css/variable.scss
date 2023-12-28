@@ -1,0 +1,46 @@
+$primary: #2dc09c;
+$dark-primary: #0e8064;
+$secondary: #33354e;
+$error: #eb5757;
+$dark-error: #d63535;
+$white: #ffffff;
+$text-color: #595c97;
+$title-color: #141322;
+$title-hover: #212529;
+$subtitle-color: #a1a1c2;
+$background-color: #f2f4f8;
+$background-hover: #dee3ed;
+$background-focus: #e7eaee;
+$background-disable: #f1f1f1;
+$background-title: #f0f2f4;
+$border-color: #e4e9f0;
+$light_grey: #e1e1e1;
+$grey: #bfbfbf;
+$dark_grey: #adadad;
+
+$height-component: 32px;
+
+$h1_font_size: 1.5rem;
+$h2_font_size: 1.25rem;
+$h3_font_size: 1.125rem;
+$h4_font_size: 1rem;
+$p_font_size: 0.875rem;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+);
+
+$icon_large: 2rem;
+$icon_small: 1.5rem;
+
+@function px-to-rem($px) {
+  @return ($px/16) + rem;
+}
+
+$x_large: 1200px;
+$large: 992px;
+$medium: 768px;
+$small: 576px;

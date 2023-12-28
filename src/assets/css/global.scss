@@ -1,0 +1,25 @@
+@import './variable';
+@import './common/toast.scss';
+@import './common/input.scss';
+@import './common/date-picker.scss';
+@import './common/select.scss';
+@import './common/checkbox.scss';
+@import './common/switch.scss';
+@import './common/button.scss';
+@import './common/table.scss';
+@import './common/pagination.scss';
+@import './common/tooltip.scss';
+
+.read-only {
+  pointer-events: none;
+}
+
+.app-error-message {
+  min-height: 26px;
+  color: $error;
+  font-size: $p_font_size;
+}
+
+.ant-form-item {
+  margin: 0;
+}

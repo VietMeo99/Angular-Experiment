@@ -1,0 +1,31 @@
+@import '../variable';
+@import '../utilities';
+
+.app-checkbox {
+  .ant-checkbox-inner {
+    width: 18px;
+    height: 18px;
+    background-color: transparent;
+    border-radius: 2px;
+    border-color: $text-color;
+  }
+
+  &:hover,
+  &:focus {
+    .ant-checkbox-inner {
+      width: 18px;
+      height: 18px;
+      background-color: $background-color;
+      border-radius: 2px;
+      box-shadow: none;
+      border-color: $text-color;
+    }
+  }
+
+  .ant-checkbox-checked {
+    .ant-checkbox-inner {
+      background-color: $primary;
+      border-color: $primary;
+    }
+  }
+}

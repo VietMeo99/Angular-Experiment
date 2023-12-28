@@ -1,0 +1,89 @@
+@import '../variable';
+@import '../utilities';
+
+.app-table {
+  .ant-table-body {
+    overflow: auto !important;
+  }
+
+  .ant-table-thead {
+    th {
+      background-color: $background-color;
+      font-weight: bold;
+      color: $text-color;
+      font-size: $h4_font_size;
+
+      span {
+        font-weight: bold;
+        color: $text-color;
+        font-size: $h4_font_size;
+      }
+
+      .ant-table-column-sorter-down,
+      .ant-table-column-sorter-up {
+        svg {
+          path {
+            color: $grey;
+          }
+        }
+      }
+
+      .ant-table-column-sorter-down svg,
+      .ant-table-column-sorter-up svg {
+        width: 0.7rem;
+        height: 0.7rem;
+      }
+
+      .ant-table-column-sorter-down.active,
+      .ant-table-column-sorter-up.active {
+        svg {
+          path {
+            color: $primary;
+          }
+        }
+      }
+    }
+
+    th:first-of-type {
+      border-top-left-radius: 8px !important;
+      border-bottom-left-radius: 8px;
+    }
+
+    th:last-of-type {
+      border-top-right-radius: 8px !important;
+      border-bottom-right-radius: 8px;
+    }
+
+    th:hover,
+    th:focus {
+      background-color: $background-focus;
+    }
+  }
+
+  .ant-table-tbody {
+    tr {
+      td {
+        font-size: $p_font_size;
+        color: inherit;
+        border-bottom: 1px solid $border-color;
+      }
+    }
+
+    tr.ant-table-row {
+      td {
+        border-left: solid 3px transparent;
+      }
+    }
+
+    tr.ant-table-row:hover,
+    tr.ant-table-row:focus {
+      td {
+        background-color: $background-focus;
+      }
+
+      td:first-of-type {
+        border-left: solid 3px $secondary;
+      }
+    }
+  }
+}

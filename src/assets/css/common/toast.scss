@@ -1,0 +1,29 @@
+@import '../variable';
+
+.app-toast-success {
+  .ant-notification-notice-with-icon {
+    svg {
+      path {
+        color: $primary;
+      }
+    }
+  }
+
+  .ant-notification-notice-message {
+    color: $primary;
+  }
+}
+
+.app-toast-error {
+  .ant-notification-notice-with-icon {
+    svg {
+      path {
+        color: $error;
+      }
+    }
+  }
+
+  .ant-notification-notice-message {
+    color: $error;
+  }
+}

@@ -1,0 +1,149 @@
+@import '../variable';
+
+.app-pagination {
+  height: 40px;
+
+  @media (max-width: $small) {
+    height: 30px;
+  }
+
+  .ant-pagination-prev,
+  .ant-pagination-next {
+    height: 40px;
+
+    @media (max-width: $small) {
+      height: 30px;
+    }
+
+    .ant-pagination-item-link {
+      width: 60px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      text-decoration: none;
+      font-size: $p_font_size;
+    }
+
+    &.ant-pagination-disabled {
+      .ant-pagination-item-link {
+        color: grey;
+
+        svg {
+          path {
+            color: grey;
+          }
+        }
+      }
+    }
+
+    &:not(.ant-pagination-disabled) {
+      .ant-pagination-item-link {
+        color: $text-color;
+
+        svg {
+          path {
+            color: $text-color;
+          }
+        }
+      }
+
+      .ant-pagination-item-link:hover {
+        color: $primary;
+
+        svg {
+          path {
+            color: $primary;
+          }
+        }
+      }
+    }
+  }
+
+  .ant-pagination-prev {
+    .ant-pagination-item-link {
+      margin-right: 20px;
+
+      @media (max-width: $small) {
+        width: 30px;
+        height: 30px;
+        margin-right: 0px;
+      }
+
+      &:after {
+        content: 'Prev';
+        font-size: $p_font_size;
+        margin-left: 5px;
+
+        @media (max-width: $small) {
+          content: '';
+          margin-left: 0px;
+        }
+      }
+    }
+  }
+
+  .ant-pagination-next {
+    .ant-pagination-item-link {
+      margin-left: 20px;
+
+      @media (max-width: $small) {
+        width: 35px;
+        height: 35px;
+        margin-left: 0px;
+      }
+
+      &:before {
+        content: 'Next';
+        font-size: $p_font_size;
+        margin-right: 5px;
+
+        @media (max-width: $small) {
+          content: '';
+          margin-right: 0px;
+        }
+      }
+    }
+  }
+
+  .ant-pagination-item {
+    height: 40px;
+    border: none;
+
+    @media (max-width: $small) {
+      height: 30px;
+    }
+
+    a {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 40px;
+      color: $text-color;
+      font-size: $p_font_size;
+      background-color: transparent;
+      transition: all 0.2s ease-in-out;
+
+      @media (max-width: $small) {
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+      }
+    }
+
+    a:hover,
+    a:focus {
+      color: $primary;
+    }
+
+    &.ant-pagination-item-active {
+      a {
+        color: $white;
+        background-color: $primary;
+      }
+    }
+  }
+}
