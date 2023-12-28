@@ -1,0 +1,45 @@
+@import '../../../../assets/css/variable';
+
+.home-body {
+  margin-top: 40px;
+
+  .home-widget-body {
+    padding: 0 30px;
+
+    li {
+      border-bottom: 1px solid #e8e9fb;
+      padding: 25px 0;
+
+      &:last-of-type {
+        border-bottom: 0;
+      }
+
+      .right {
+        h2 {
+          color: #4b4d6f;
+          font-weight: 600;
+        }
+
+        p {
+          font-size: px-to-rem(14);
+        }
+
+        .right-location {
+          display: flex;
+          align-items: center;
+          margin-top: 10px;
+
+          img {
+            max-width: 16px;
+            margin-right: 5px;
+          }
+
+          span {
+            color: #4b4d6f;
+            font-size: px-to-rem(14);
+          }
+        }
+      }
+    }
+  }
+}

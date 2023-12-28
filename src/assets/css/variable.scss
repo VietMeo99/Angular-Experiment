@@ -37,7 +37,7 @@ $icon_large: 2rem;
 $icon_small: 1.5rem;
 
 @function px-to-rem($px) {
-  @return ($px/16) + rem;
+  @return calc($px / 16) + rem;
 }
 
 $x_large: 1200px;

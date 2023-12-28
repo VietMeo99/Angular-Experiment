@@ -1,0 +1,25 @@
+<div class="auth-layout">
+  <div nz-row class="auth-layout-content" [nzGutter]="[0, 29]">
+    <div nz-col nzXs="24" nzSm="24" nzMd="10" class="auth-layout-left">
+      <div class="auth-left">
+        <div class="auth-left-container"></div>
+      </div>
+    </div>
+    <div nz-col nzXs="24" nzSm="24" nzMd="14" class="auth-layout-right">
+      <div class="item-logo">
+        <img src="./../../../assets/images/login/logo_desktop.png" alt="" />
+      </div>
+      <div class="auth-layout-right-container">
+        <div
+          class="auth-layout-right-animation"
+          [@routeAnimations]="getRouteAnimationData()"
+        >
+          <!-- [@routeAnimations]="prepareRoute(outlet)" -->
+          <!-- <router-outlet #outlet="outlet"></router-outlet> -->
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copy-right">Copyright © 2020 APPITEAM | www.appiteam.com</div>
+</div>

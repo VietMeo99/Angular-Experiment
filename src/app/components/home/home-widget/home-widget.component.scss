@@ -1,0 +1,29 @@
+@import '../../../../assets/css/variable';
+
+.home-widget {
+  background: #ffffff;
+  border: 1px solid #e1e1e1;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin-bottom: 60px;
+
+  .home-widget-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 30px;
+    border-bottom: 1px solid #f1f1f1;
+
+    .home-widget-head-left {
+      span {
+        color: #2dc09c;
+        font-weight: 550;
+        margin-left: 20px;
+      }
+    }
+
+    a {
+      font-size: px-to-rem(14);
+    }
+  }
+}

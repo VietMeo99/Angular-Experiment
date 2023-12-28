@@ -1,0 +1,78 @@
+@import 'src/assets/css/variable.scss';
+
+.auth-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  .auth-layout-content {
+    flex: 1;
+
+    .auth-layout-left {
+      div.auth-left {
+        background-image: url('../../../assets/images/login/bg_left.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        min-height: 320px;
+
+        p {
+          font-weight: bold;
+          font-size: px-to-rem(36);
+          text-align: center;
+          text-transform: uppercase;
+          color: #e8e9fb;
+          opacity: 0.87;
+          padding-top: 60px;
+        }
+      }
+    }
+
+    .auth-layout-right {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 0 15px;
+      position: unset;
+      .item-logo {
+        width: 100%;
+        text-align: right;
+        padding: 33px 45px 0 0;
+
+        @media screen and (max-width: $medium) {
+          padding: 20px 24px;
+          position: absolute;
+          top: 0;
+          right: 0;
+        }
+      }
+
+      .auth-layout-right-container {
+        max-width: 379px;
+        width: 100%;
+        flex: 1;
+        display: flex;
+        align-items: center;
+
+        .auth-layout-right-animation {
+          width: 100%;
+          height: 400px;
+        }
+      }
+    }
+  }
+
+  .copy-right {
+    font-size: px-to-rem(16);
+    color: #33354e;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+    padding-top: 20px;
+  }
+}

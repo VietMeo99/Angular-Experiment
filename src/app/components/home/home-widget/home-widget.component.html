@@ -1,0 +1,10 @@
+<div class="home-widget">
+  <div class="home-widget-head">
+    <div class="home-widget-head-left">
+      <img *ngIf="icon" [attr.src]="icon" alt="" />
+      <span>{{ label }}</span>
+    </div>
+    <a href="">View all</a>
+  </div>
+  <ng-content></ng-content>
+</div>
