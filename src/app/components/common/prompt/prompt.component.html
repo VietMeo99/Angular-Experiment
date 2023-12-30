@@ -1,0 +1,27 @@
+<nz-modal
+  nzWrapClassName="vertical-center-modal"
+  [(nzVisible)]="isVisible"
+  [nzClosable]="false"
+  [nzContent]="modalContent"
+  [nzFooter]="null"
+>
+  <ng-template #modalContent>
+    <div class="container">
+      <div class="content">
+        <p class="title">{{ 'common.title.cancelPrompt' | translate }}</p>
+      </div>
+      <div class="button-group">
+        <div class="button-container">
+          <app-button buttonType="primary" (handleClick)="confirm()">
+            {{ 'common.label.yes' | translate }}
+          </app-button>
+        </div>
+        <div class="button-container">
+          <app-button buttonType="cancel" (handleClick)="cancel()">
+            {{ 'common.label.no' | translate }}
+          </app-button>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+</nz-modal>

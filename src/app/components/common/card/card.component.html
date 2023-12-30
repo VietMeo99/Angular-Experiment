@@ -1,0 +1,6 @@
+<div class="app-card">
+  <div class="title-container" *ngIf="titleTemplate">
+    <ng-container *ngTemplateOutlet="titleTemplate"></ng-container>
+  </div>
+  <ng-content></ng-content>
+</div>

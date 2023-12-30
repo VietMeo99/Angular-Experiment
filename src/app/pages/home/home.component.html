@@ -1,8 +1,15 @@
 <div class="appi-team-home">
   <pre>{{ profileService?.onProfileBehaviorSubject?.email }}</pre>
   <button (click)="onLogout()">Logout</button>
+  <br />
+
+  <button (click)="countUp()">count</button>
+  <!-- <button (click)="countUp()">count : {{ count }}</button> -->
+  <!-- <p>
+    {{ randomNumber() }}
+  </p> -->
   <div class="container">
-    <app-home-head></app-home-head>
+    <app-home-head (handleClick?)="({})"></app-home-head>
     <app-home-body></app-home-body>
   </div>
 </div>

@@ -14,8 +14,18 @@ export class HomeComponent implements OnInit {
 
   profileService: any = {};
 
+  count: number = 1;
+  // randomNumber = Math.random();
+  randomNumber() {
+    return Math.random();
+  }
+
   ngOnInit(): void {}
   onLogout(): void {
     // this.authService.logout();
+  }
+
+  countUp() {
+    this.count++;
   }
 }

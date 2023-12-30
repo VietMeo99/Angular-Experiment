@@ -3,6 +3,7 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "src",
+    "strictPropertyInitialization": false,
     "paths": {
       "@environment/*": ["./src/environments/*"],
       "@pages/*": ["./src/app/pages/*"],

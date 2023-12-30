@@ -1,0 +1,12 @@
+<nz-modal
+  [nzStyle]="{ marginTop: '12vh', padding: '0 15px' }"
+  [nzWidth]="700"
+  [nzBodyStyle]="{ padding: '35px', borderRadius: '15px' }"
+  [nzVisible]="nzVisible"
+  [nzTitle]="null"
+  [nzFooter]="null"
+  [nzClosable]="false"
+  (nzOnCancel)="nzOnCancel()"
+>
+  <ng-content></ng-content>
+</nz-modal>

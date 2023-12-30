@@ -1,0 +1,24 @@
+@import '../../../../assets/css/variable';
+
+.app-card {
+  width: 100%;
+  background-color: $white;
+  border: 1px solid $border-card;
+  border-radius: 8px;
+  padding: 30px;
+  position: relative;
+
+  .title-container {
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    top: -15px;
+    left: 30px;
+    position: absolute;
+    background-color: $white;
+    padding: 0px 15px;
+    border-radius: 8px;
+  }
+}

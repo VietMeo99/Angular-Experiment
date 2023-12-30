@@ -1,0 +1,57 @@
+@import 'src/assets/css/variable';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0px;
+
+  .content {
+    display: flex;
+    align-items: center;
+
+    .icon-warning {
+      width: $icon_small;
+      height: $icon_small;
+      margin-right: 15px;
+    }
+
+    .title {
+      font-size: $h3_font_size;
+      font-weight: bold;
+      color: $error;
+      text-align: center;
+    }
+  }
+
+  .button-group {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+
+    .button-container {
+      width: 150px;
+      flex: 1;
+      margin: 0px 15px;
+    }
+  }
+}
+
+::ng-deep .ant-modal-content {
+  background-color: $white;
+  border: 1px solid $border-card;
+  border-radius: 8px;
+}
+
+::ng-deep .vertical-center-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+::ng-deep .vertical-center-modal .ant-modal {
+  top: 0;
+}

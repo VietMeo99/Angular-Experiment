@@ -1,0 +1,11 @@
+<button
+  [ngClass]="['app-button', buttonType]"
+  nz-button
+  nzType="primary"
+  nzBlock
+  [type]="type || 'button'"
+  [nzLoading]="loading"
+  (click)="onClick()"
+>
+  <ng-content></ng-content>
+</button>
